@@ -5,7 +5,7 @@ function LobbyPage() {
   const navigate = useNavigate();
 
   const handleCodeBlockClick = (codeBlockTitle) => {
-    navigate(`/codeBlockPage/${codeBlockTitle}`);
+    navigate(`/codeblockpage/${codeBlockTitle}`);
   };
 
   return (
@@ -14,7 +14,7 @@ function LobbyPage() {
       <ul className="codesItemsList">
         <li onClick={() => handleCodeBlockClick("Async Case")}>Async case</li>
         <li onClick={() => handleCodeBlockClick("Array Manipulation")}>Array Manipulation</li>
-        <li onClick={() => handleCodeBlockClick("Object Oriented Programming")}>Object-oriented Programming</li>
+        <li onClick={() => handleCodeBlockClick("Object Oriented Programming")}>Object Oriented Programming</li>
         <li onClick={() => handleCodeBlockClick("Recursion Examples")}>Recursion Examples</li>
       </ul>
     </div>
