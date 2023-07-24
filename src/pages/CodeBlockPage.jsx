@@ -56,7 +56,10 @@ function CodeBlockPage() {
       const studentFunc = new Function(value);
       const studentResult = studentFunc();
 
-      setIsCodeCorrect(studentResult === codeBlock.solution);
+      console.log({studentResult})
+      console.log(codeBlock.solution)
+
+      setIsCodeCorrect(studentResult == codeBlock.solution);
     } catch (error) {
       setIsCodeCorrect(false);
     }

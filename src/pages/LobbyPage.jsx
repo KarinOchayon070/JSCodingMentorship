@@ -10,10 +10,10 @@ function LobbyPage() {
   };
 
   const codeItems = [
-    "Async Case",
-    "Array Manipulation",
-    "Object Oriented Programming",
-    "Recursion Examples"
+    "Array",
+    "Sorting",
+    "Math",
+    "Recursion"
   ];
 
   return (
