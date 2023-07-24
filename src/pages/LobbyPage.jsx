@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 function LobbyPage() {
   const navigate = useNavigate();
 
@@ -8,14 +9,28 @@ function LobbyPage() {
     navigate(`/codeblockpage/${codeBlockTitle}`);
   };
 
+  const codeItems = [
+    "Async Case",
+    "Array Manipulation",
+    "Object Oriented Programming",
+    "Recursion Examples"
+  ];
+
   return (
     <div className="LobbyPage">
-      <h1 className="LobbyPageTitle">Choose Code Block</h1>
+      <div className="headerContainer">
+        <div className="logoContainer">
+          <img src="./logo.png" alt="Logo" className="logoImage"  />
+        </div>
+        <h1 className="LobbyPageMainTitle word">Welcome To Coding Mentorship 👋</h1>
+      </div>
+      <h2 className="LobbyPageSubTitle">Please Choose Code Block</h2>
       <ul className="codesItemsList">
-        <li onClick={() => handleCodeBlockClick("Async Case")}>Async case</li>
-        <li onClick={() => handleCodeBlockClick("Array Manipulation")}>Array Manipulation</li>
-        <li onClick={() => handleCodeBlockClick("Object Oriented Programming")}>Object Oriented Programming</li>
-        <li onClick={() => handleCodeBlockClick("Recursion Examples")}>Recursion Examples</li>
+        {codeItems.map((item, index) => (
+          <li key={index} onClick={() => handleCodeBlockClick(item)}>
+            <span>{item}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
