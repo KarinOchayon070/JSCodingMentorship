@@ -6,20 +6,17 @@ import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 import "codemirror/mode/javascript/javascript";
 
-
-const socket = io("http://localhost:3001");
+const socket = io(process.env.REACT_APP_BASE_URL);
 
 function CodeBlockPage() {
   const { codeBlockTitle } = useParams();
   const [codeBlock, setCodeBlock] = useState({});
   const [isMentor, setIsMentor] = useState(null);
   
-  console.log({isMentor})
-  
   useEffect(() => {
     const getCodeBlock = async () => {
       try {
-        const url = `http://localhost:3001/codeblockpage/${encodeURIComponent(
+        const url = `${process.env.REACT_APP_BASE_URL}/codeblockpage/${encodeURIComponent(
           codeBlockTitle
           )}`;
           const response = await fetch(url);
