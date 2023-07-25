@@ -3,6 +3,7 @@
 - The web application serves as a platform to facilitate remote coding sessions between mentors and students, focusing on JavaScript programming.
 - It enables mentors to share code snippets with their mentees, observe their real-time coding process, and provide interactive feedback during the coding exercises.
 - The application is particularly useful in situations where remote interactions are preferred, such as during ongoing Covid situations, ensuring a convenient and safe learning experience for both parties involved.
+- The frontend is built using React.
 ## Features 🌿
 - Lobby Page - Choosing a Code Block 
     - The Lobby page acts as the gateway to the coding exercises, accessible without authentication to both mentors and students.
