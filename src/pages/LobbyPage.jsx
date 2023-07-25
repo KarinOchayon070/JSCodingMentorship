@@ -20,7 +20,9 @@ function LobbyPage() {
     <div className="LobbyPage">
       <div className="headerContainer">
         <div className="logoContainer">
+        <a href="https://js-coding-mentorship-frontend.onrender.com">
           <img src="./logo.png" alt="Logo" className="logoImage"  />
+         </a>
         </div>
         <h1 className="LobbyPageMainTitle word">Welcome To Coding Mentorship 👋</h1>
       </div>

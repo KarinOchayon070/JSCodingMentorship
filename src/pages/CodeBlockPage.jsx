@@ -68,15 +68,17 @@ function CodeBlockPage() {
   };
 
   if (!codeBlock.title) {
-    return <div>Loading...</div>;
+    return <div className="loadingDiv">Loading...</div>;
   }
 
   return (
     <div className="CodeBlockPage">
-      <img className="logoImage" src="/logo.png" alt="Logo" />
+      <a href="https://js-coding-mentorship-frontend.onrender.com">
+        <img className="logoImage" src="/logo.png" alt="Logo" />
+      </a>
       <h1 className="CodeBlockPageTitle">{codeBlock.title}</h1>
       {isMentor !== null && (
-        <p>You are {isMentor ? "a mentor" : "a student"}.</p>
+        <p>You are {isMentor ? "a mentor 🧑‍🏫" : "a student 🧑‍🎓"}</p>
       )}
       <pre className="codeContainer">
         <CodeMirror
@@ -96,14 +98,7 @@ function CodeBlockPage() {
         />
       </pre>
       {isCodeCorrect && (
-        <div
-          style={{
-            fontSize: "60px",
-            textAlign: "center",
-            color: "#00A8B5",
-            fontFamily: "Calibri",
-          }}
-        >
+        <div className="correctCodeDiv">
           Congratulations! Code is correct 😄
         </div>
       )}

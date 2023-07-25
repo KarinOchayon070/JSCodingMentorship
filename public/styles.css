@@ -67,3 +67,15 @@ li {
 .codeContainer {
   text-align: left;
 }
+
+.loadingDiv{
+  font-size: 60px;
+  color: #00A8B5;
+}
+
+.correctCodeDiv{
+  font-size: 60px;
+  text-align: center;
+  color: #00A8B5;
+  font-family: Calibri;
+}
