@@ -72,7 +72,7 @@ function CodeBlockPage() {
 
   return (
     <div className="CodeBlockPage">
-      <a href="https://js-coding-mentorship-frontend.onrender.com">
+      <a href={window.location.origin}>
         <img className="logoImage" src="/logo.png" alt="Logo" />
       </a>
       <h1 className="CodeBlockPageTitle">{codeBlock.title}</h1>
