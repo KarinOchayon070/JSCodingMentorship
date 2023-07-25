@@ -6,9 +6,9 @@
 ## Features 🌿
 - Lobby Page - Choosing a Code Block 
     - The Lobby page acts as the gateway to the coding exercises, accessible without authentication to both mentors and students.
-      When mentors  enter the website, they are placed in read-only mode, allowing them to observe the coding exercises but not make any modifications.
+      When mentors enter the website, they are placed in read-only mode, allowing them to observe the coding exercises but not make any modifications.
       On the other hand, students have the ability to edit and work with the provided code snippets during the coding sessions.
-     This read-only mode for mentors ensures that they can effectively monitor and guide students while they actively engage with the code and receive hands-on learning experiences.
+      This read-only mode for mentors ensures that they can effectively monitor and guide students while they actively engage with the code and receive hands-on learning experiences.
     - It presents a clean interface with the following elements:
         - Title: "Choose code block"
         - Code Blocks: A list of code block items, each representing a different coding exercise. For instance, items like "Array" can be       included.
