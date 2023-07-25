@@ -23,7 +23,6 @@ function CodeBlockPage() {
         }/codeblockpage/${encodeURIComponent(codeBlockTitle)}`;
         const response = await fetch(url);
         const responseToJson = await response.json();
-
         setCodeBlock(responseToJson);
       } catch (err) {
         console.error("Error fetching code block:", err);
