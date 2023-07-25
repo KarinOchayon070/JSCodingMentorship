@@ -8,6 +8,7 @@ function LobbyPage() {
     navigate(`/codeblockpage/${codeBlockTitle}`);
   };
 
+  // The name of the codes blocks.
   const codeItems = [
     "Array",
     "Sorting",
