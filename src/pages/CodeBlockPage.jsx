@@ -63,9 +63,6 @@ function CodeBlockPage() {
       const studentFunc = new Function(value);
       const studentResult = studentFunc();
 
-      console.log({studentResult})
-      console.log(codeBlock.solution)
-
       // If the code executes successfully, it compares the result with the correct solution obtained from the codeBlock.solution property.
       setIsCodeCorrect(studentResult == codeBlock.solution);
     } catch (error) {
